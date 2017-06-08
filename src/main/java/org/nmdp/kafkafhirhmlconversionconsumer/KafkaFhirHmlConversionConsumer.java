@@ -40,7 +40,7 @@ public class KafkaFhirHmlConversionConsumer {
         URL consumerConfigUrl;
 
         try {
-            consumerConfigUrl = new URL("file:." + "src/main/resources/consumer-configuration.yaml");
+            consumerConfigUrl = new URL("file:." + "/src/main/resources/consumer-configuration.yaml");
             khwb = new KafkaFhirHmlConverter(consumerConfigUrl);
         } catch (Exception ex) {
             LOG.error("Exception thrown: " + ex + "\nShutting Down.");
